@@ -1,30 +1,29 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import Menu from './menu'
 import {Car} from './car'
-import filter from '../filter/filter'
+import filter from '../filter/filterCategorie'
 
-function NavBar() {
+function NavBar({status}) {
+
+    useEffect(()=>{
+        console.log(status)
+    },[status])
 
 return (
     <nav className='navbar'>
-        <Menu></Menu>
-
-        <div className='navbar-left'>
+        {status && <Menu></Menu>}
             <h1 className='title-store'>WILKER STORE</h1>
-        </div>
-
-        <div className='listItem'>
+            <div className='listItem'>
+        {status && (
             <ul>
-                <ListItem item={"Tudos"} categorie="all"/>
-                <ListItem item={"Feminino"} categorie="femenino"/>
-                <ListItem item={"Calcados"} categorie="calcados"/>
-                <ListItem item={"Jeans"} categorie="jeans"/>
-                <ListItem item={"Acessorios"} categorie="acessorios"/>
-                <ListItem item={"Infatil"} categorie="infantil"/>
-                <ListItem item={"Masculino"} categorie="masculino"/>
+                <ListItem item={"Todo"} categorie="all"/>
+                <ListItem item={"Ropa"} categorie="Ropa"/>
+                <ListItem item={"Electronicos"} categorie="Electronicos"/>
+                <ListItem item={"Muebles"} categorie="Muebles"/>
+                <ListItem item={"Otros"} categorie="Otros"></ListItem>
             </ul>
+        )}
         </div>
-
         <Car></Car>
     </nav>
 )

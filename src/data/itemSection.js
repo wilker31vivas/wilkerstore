@@ -1,183 +1,139 @@
-export const itemsArray = [
+export let itemsArray = [
   {
-    img: "../img/jaqueta-feminino.jpg",
-    price: 124.99,
-    title: "Jaqueta Feminina Jeans Bolsos Marisa",
-    categorie: "femenino",
+    title: "Abrigo rojo",
+    price: 280,
+    categorie: "Ropa",
   },
   {
-    img: "../img/top-feminino.jpg",
-    price: 29.99,
-    title: "Blusa Cropped Feminina Botões Marisa",
-    categorie: "femenino",
+    title: "Pantalon rojo ",
+    price: 356,
+    categorie: "Ropa",
   },
   {
-    img: "../img/vestido1-feminino.jpg",
-    price: 114.99,
-    title: "Vestido Midi Feminino Estampa Folhas Marisa",
-    categorie: "femenino",
+    title: "Gorra de beisbol azul",
+    price: 48,
+    categorie: "Ropa",
   },
   {
-    img: "../img/vestido2-feminino.jpg",
-    price: 134.99,
-    title: "Vestido Longo Feminino Recorte Alças Finas Marisa",
-    categorie: "femenino",
+    title: "Gorra de beisbol roja",
+    price: 38,
+    categorie: "Ropa",
   },
   {
-    img: "../img/vestido3-feminino.jpg",
-    price: 94.99,
-    title: "Vestido Feminino Laise Alças Finas Marisa",
-    categorie: "femenino",
+    title: "Laptop",
+    price: 1500,
+    categorie: "Electronicos",
   },
   {
-    img: "../img/tenis-masculino.jpg",
-    price: 94.99,
-    title: "Tênis Masculino Casual MR",
-    categorie: "calcados",
+    title: "Sillon",
+    price: 568,
+    categorie: "Muebles",
   },
   {
-    img: "../img/calcado1-feminino.jpg",
-    price: 89.99,
-    title: "Mocassim Loafer Feminino Bridão Via Uno",
-    categorie: "calcados",
+    title: "Bota dorada",
+    price: 456,
+    categorie: "Ropa",
   },
   {
-    img: "../img/calcado2-feminino.jpg",
-    price: 94.99,
-    title: "Sandália Anabela Feminina Espadrille Textura Marisa",
-    categorie: "calcados",
+    title: "Bota blanca",
+    price: 400,
+    categorie: "Ropa"
   },
   {
-    img: "../img/tenis2-masculino.jpg",
-    price: 139.99,
-    title: "Tênis Masculino Casual Cano Alto Zapy",
-    categorie: "calcados",
+    title: "Bicicleta electronica",
+    price: 2500,
+    categorie: "Otros"
   },
   {
-    img: "../img/calcado3-feminino.jpg",
-    price: 89.99,
-    title: "Tênis Casual Feminino Recortes Marisa",
-    categorie: "calcados",
-  },
-  {
-    img: "../img/calca1-feminino.jpg",
-    price: 104.99,
-    title: "Calça Flare Feminina Bolsos Ecxo Jeans",
-    categorie: "jeans",
-  },
-  {
-    img: "../img/saia1-feminino.jpg",
-    price: 84.99,
-    title: "Saia Jeans Feminina Tachas Bolsos Marisa",
-    categorie: "jeans",
-  },
-  {
-    img: "../img/calca2-feminino.jpg",
-    price: 109.99,
-    title: "Calça Jeans Wide Leg Feminina Bolsos Marisa",
-    categorie: "jeans",
-  },
-  {
-    img: "../img/calca3-feminino.jpg",
-    price: 104.99,
-    title: "Calça Jeans Flare Feminina Cinto Marisa",
-    categorie: "jeans",
-  },
-  {
-    img: "../img/calca4-feminino.jpg",
-    price: 94.99,
-    title: "Calça Jeans Cigarrete Feminina Push Up Marisa",
-    categorie: "jeans",
-  },
-  {
-    img: "../img/acessorios1.jpg",
-    price: 94.99,
-    title: "Bolsa Transversal Crossbody Feminina Moleca",
-    categorie: "acessorios",
-  },
-  {
-    img: "../img/acessorios2.jpg",
-    price: 284.99,
-    title: "Relógio Feminino Strass Technos 2035MYS/1K",
-    categorie: "acessorios",
-  },
-  {
-    img: "../img/acessorios3.jpg",
-    price: 69.99,
-    title: "Óculos De Sol Feminino Aviador Marisa",
-    categorie: "acessorios",
-  },
-  {
-    img: "../img/acessorios4.jpg",
-    price: 175.99,
-    title: "Mochila Infantil Escolar Bolso Frontal Xeryus",
-    categorie: "acessorios",
-  },
-  {
-    img: "../img/acessorios5.jpg",
-    price: 22.99,
-    title: "Garrafa Squeeze Marisa 700ml",
-    categorie: "acessorios",
-  },
-  {
-    img: "../img/infantil1.jpg",
-    price: 34.99,
-    title: "Camiseta Infantil Patrulha Canina Nickelodeon Tam 1 a 4",
-    categorie: "infantil",
-  },
-  {
-    img: "../img/infantil2.jpg",
-    price: 34.99,
-    title: "Kit 5 Cuecas Infantil Patrulha Canina Nickelodeon Tam 1 a 4",
-    categorie: "infantil",
-  },
-  {
-    img: "../img/infantil3.jpg",
-    price: 174.99,
-    title: "Mochila Mala Com Rodas Infantil Gata Marie Xeryus",
-    categorie: "infantil",
-  },
-  {
-    img: "../img/infantil4.jpg",
-    price: 29.99,
-    title: "Camiseta Infantil Carros Disney Tam 1 a 4",
-    categorie: "infantil",
-  },
-  {
-    img: "../img/infantil5.jpg",
-    price: 49.99,
-    title: "Conjunto Infantil Estampa Leão Manga Curta Mr",
-    categorie: "infantil",
-  },
-
-  {
-    img: "../img/masculino1.jpg",
-    price: 94.99,
-    title: "Calça Masculina Jeans Reta Bolsos MR",
-    categorie: "masculino",
-  },
-  {
-    img: "../img/masculino2.jpg",
-    price: 49.99,
-    title: "Camiseta Masculina Capuz Manga Longa MR",
-    categorie: "masculino",
-  },
-  {
-    img: "../img/masculino3.jpg",
-    price: 54.99,
-    title: "Polo Masculina Listrada Manga Curta MR",
-    categorie: "masculino",
-  },
-  {
-    img: "../img/masculino4.jpg",
-    price: 39.99,
-    title: "Camiseta Masculina Estampa Darth Vader Star Wars Disney",
-    categorie: "masculino",
-  },
-  {
-    img: "../img/masculino5.jpg",
-    price: 104.99,
-    title: "Camisa Masculina Manga Longa MR",
-    categorie: "masculino",
-  },
+    title: "Bicicleta electonica",
+    price: 3000,
+    categorie: "Otros"
+  },{
+    title: "Perfume olor a naranja",
+    price: 99,
+    categorie: "Otros"
+  },{
+    title: "Camiseta",
+    price: 49,
+    categorie: "Ropa"
+  },{
+    title: "Patalon jogger",
+    price: 79,
+    categorie: "Ropa"
+  },{
+    title: "Pantalon Wide Leg",
+    price: 120,
+    categorie: "Ropa"
+  },{
+    title: "Audifonos rojo",
+    price: 120,
+    categorie: "Electronicos"
+  },{
+    title: "Telefono",
+    price: 1430,
+    categorie: "Electronicos"
+  },{
+    title: "Mesa de madera",
+    price: 220,
+    categorie: "Otros"
+  },{
+    title: "Tenis de futbol",
+    price: 120,
+    categorie: "Ropa"
+  },{
+    title: "Sandalia",
+    price: 99,
+    categorie: "Ropa"
+  },{
+    title: "Maleta",
+    price: 300,
+    categorie: "Otros"
+  },{
+    title: "Vazo de cristal",
+    price: 30,
+    categorie: "Otros"
+  },{
+    title: "Gorra de beisbol azul oscuro",
+    price: 48,
+    categorie: "Ropa"
+  },{
+    title: "Mando de consola",
+    price: 120,
+    categorie: "Otros"
+  },{
+    title: "Audifonos blanco con negro",
+    price: 120,
+    categorie: "Electronicos"
+  },{
+    title: "Laptop",
+    price: 990,
+    categorie: "Electronicos"
+  },{
+    title: "Reloj inteligente",
+    price: 150,
+    categorie: "Electronicos"
+  },{
+    title: "Sofa negro",
+    price: 499,
+    categorie: "Muebles"
+  },{
+    title: "Gafas de sol rosado",
+    price: 79,
+    categorie: "Otros"
+  },{
+    title: "Cartera transparente",
+    price: 160,
+    categorie: "Otros"
+  },{
+    title: "Sandalia",
+    price: 70,
+    categorie: "Ropa"
+  }
+  
 ];
+
+itemsArray.forEach((item, index)=>{
+  item.img = [`../img-products/${index + 1}.jpg`, `../img-products/${index + 1}.1.jpg`, `../img-products/${index + 1}.2.jpg`]
+  item.codigo = `00${index + 1}`
+  item.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales efficitur tempor. Pellentesque molestie diam."
+})

@@ -21,17 +21,26 @@ export function Car({ num }) {
             document.removeEventListener("mousedown", handler);
         }
 
-    });
+    }, []);
 
     const { items } = useContext(TiendaContext)
+
+
+    function showImg() {
+        const arrayImg = document.querySelectorAll(".img-collection")
+        for (let i = 0; i < arrayImg.length; i++) {
+            arrayImg[i].classList.toggle("hidden-img");
+        }
+        console.log(arrayImg)
+    }
 
     return (
         <>
             <div className="cart-shopping">
-                <div className='cart-shopping-container' ref={menuRef}>
-                    <div className='cart-shopping-right-trigger' onClick={() => { setOpen(!open) }}>
-                        <img src="./img/cart-shopping-solid.svg" alt="" className='cart-shopping-img' />
-                        <div className='numitem'>{items.length}</div>
+                <div className='cart-shopping-container' ref={menuRef} >
+                    <div className='cart-shopping-right-trigger' onClick={() => { setOpen(!open); showImg() }}>
+                        <img src="../icons/cart-shopping-solid.svg" alt="" className={`cart-shopping-img ${items.length > 0 ? 'active' : 'inactive'}`}/>
+                        <div className={`numitem ${items.length > 0 ? 'active' : 'inactive'}`}>{items.length}</div>
                     </div>
 
                     <div className={`cart-shopping-dropdown-menu ${open ? 'active' : 'inactive'}`} >
@@ -47,7 +56,7 @@ export function Car({ num }) {
 }
 
 function ItemsList() {
-    const { items } = useContext(TiendaContext)
+    const { items } = useContext(TiendaContext);
 
     if (items.length === 0) {
         return <h1 className="cart-shopping-title">Ainda não tem items</h1>
@@ -56,7 +65,7 @@ function ItemsList() {
     return (
         <>
             {items.map((item, index) => (
-                <CarItems item={item} key={item.id} id={item.id}></CarItems>
+                <CarItems item={item} key={index + 1} id={item.id}></CarItems>
             ))}
             <Buy></Buy>
         </>
@@ -66,19 +75,15 @@ function ItemsList() {
 function Buy() {
     const { items } = useContext(TiendaContext)
 
-    const itemsPrice = items.map(function (item) {
-        return item.price
-    });
+    const itemsPrice = items.map(item => item.price * item.qtd);
 
-    const priceReduce = itemsPrice.reduce(function(item, index){
-        return item + index
-    })
+    const priceReduce = itemsPrice.reduce((total, price) => total + price, 0);
 
     return (
         <>
             <div className="order">
                 <p>
-                    <span>Total</span>
+                    <span>Total:</span>
                 </p>
                 <p>R$ {priceReduce.toFixed(2)}</p>
             </div>
