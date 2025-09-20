@@ -5,10 +5,6 @@ import filter from '../filter/filterCategorie'
 
 function NavBar({status}) {
 
-    useEffect(()=>{
-        console.log(status)
-    },[status])
-
 return (
     <nav className='navbar'>
         {status && <Menu></Menu>}
@@ -16,11 +12,11 @@ return (
             <div className='listItem'>
         {status && (
             <ul>
-                <ListItem item={"Todo"} categorie="all"/>
-                <ListItem item={"Ropa"} categorie="Ropa"/>
-                <ListItem item={"Electronicos"} categorie="Electronicos"/>
-                <ListItem item={"Muebles"} categorie="Muebles"/>
-                <ListItem item={"Otros"} categorie="Otros"></ListItem>
+                <ListItem item={"All"} category="all"/>
+                <ListItem item={"Clothing"} category="Clothing"/>
+                <ListItem item={"Electronics"} category="Electronics"/>
+                <ListItem item={"Furniture"} category="Furniture"/>
+                <ListItem item={"Others"} category="Others"></ListItem>
             </ul>
         )}
         </div>
@@ -33,7 +29,7 @@ return (
 function ListItem(props) {
     return (
         <li className="dropdownItem">
-            <button className='dropdownItem-button' onClick={() => filter(props.categorie)}>{props.item}</button>
+            <button className='dropdownItem-button' onClick={() => filter(props.category)}>{props.item}</button>
         </li>
     )
 }

@@ -49,7 +49,7 @@ export default function Product({ id }) {
                             </div>
                             <div className='product-box-info'>
                                 <h2>{itemsArray[id].title}</h2>
-                                <p className='product-box-categorie'>{itemsArray[id].categorie}</p>
+                                <p className='product-box-categorie'>{itemsArray[id].category}</p>
                                 <p className='product-box-description'>{itemsArray[id].description}</p>
                                 <div className='price-cart'>
                                     <p className='product-box-price'>Precio: <span>${itemsArray[id].price}</span></p>

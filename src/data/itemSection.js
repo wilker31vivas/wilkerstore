@@ -1,136 +1,156 @@
 export let itemsArray = [
   {
-    title: "Abrigo rojo",
+    title: "Red coat",
     price: 280,
-    categorie: "Ropa",
+    category: "Clothing",
   },
   {
-    title: "Pantalon rojo ",
+    title: "Red pants",
     price: 356,
-    categorie: "Ropa",
+    category: "Clothing",
   },
   {
-    title: "Gorra de beisbol azul",
+    title: "Blue baseball cap",
     price: 48,
-    categorie: "Ropa",
+    category: "Clothing",
   },
   {
-    title: "Gorra de beisbol roja",
+    title: "Red baseball cap",
     price: 38,
-    categorie: "Ropa",
+    category: "Clothing",
   },
   {
     title: "Laptop",
     price: 1500,
-    categorie: "Electronicos",
+    category: "Electronics",
   },
   {
-    title: "Sillon",
+    title: "Armchair",
     price: 568,
-    categorie: "Muebles",
+    category: "Furniture",
   },
   {
-    title: "Bota dorada",
+    title: "Golden boot",
     price: 456,
-    categorie: "Ropa",
+    category: "Clothing",
   },
   {
-    title: "Bota blanca",
+    title: "White boot",
     price: 400,
-    categorie: "Ropa"
+    category: "Clothing",
   },
   {
-    title: "Bicicleta electronica",
+    title: "Electric bicycle",
     price: 2500,
-    categorie: "Otros"
+    category: "Others",
   },
   {
-    title: "Bicicleta electonica",
+    title: "Electric bicycle",
     price: 3000,
-    categorie: "Otros"
-  },{
-    title: "Perfume olor a naranja",
+    category: "Others",
+  },
+  {
+    title: "Orange-scented perfume",
     price: 99,
-    categorie: "Otros"
-  },{
-    title: "Camiseta",
+    category: "Others",
+  },
+  {
+    title: "T-shirt",
     price: 49,
-    categorie: "Ropa"
-  },{
-    title: "Patalon jogger",
+    category: "Clothing",
+  },
+  {
+    title: "Jogger pants",
     price: 79,
-    categorie: "Ropa"
-  },{
-    title: "Pantalon Wide Leg",
+    category: "Clothing",
+  },
+  {
+    title: "Wide Leg pants",
     price: 120,
-    categorie: "Ropa"
-  },{
-    title: "Audifonos rojo",
+    category: "Clothing",
+  },
+  {
+    title: "Red headphones",
     price: 120,
-    categorie: "Electronicos"
-  },{
-    title: "Telefono",
+    category: "Electronics",
+  },
+  {
+    title: "Phone",
     price: 1430,
-    categorie: "Electronicos"
-  },{
-    title: "Mesa de madera",
+    category: "Electronics",
+  },
+  {
+    title: "Wooden table",
     price: 220,
-    categorie: "Otros"
-  },{
-    title: "Tenis de futbol",
+    category: "Others",
+  },
+  {
+    title: "Soccer shoes",
     price: 120,
-    categorie: "Ropa"
-  },{
-    title: "Sandalia",
+    category: "Clothing",
+  },
+  {
+    title: "Sandal",
     price: 99,
-    categorie: "Ropa"
-  },{
-    title: "Maleta",
+    category: "Clothing",
+  },
+  {
+    title: "Suitcase",
     price: 300,
-    categorie: "Otros"
-  },{
-    title: "Vazo de cristal",
+    category: "Others",
+  },
+  {
+    title: "Crystal glass",
     price: 30,
-    categorie: "Otros"
-  },{
-    title: "Gorra de beisbol azul oscuro",
+    category: "Others",
+  },
+  {
+    title: "Dark blue baseball cap",
     price: 48,
-    categorie: "Ropa"
-  },{
-    title: "Mando de consola",
+    category: "Clothing",
+  },
+  {
+    title: "Game controller",
     price: 120,
-    categorie: "Otros"
-  },{
-    title: "Audifonos blanco con negro",
+    category: "Others",
+  },
+  {
+    title: "Black and white headphones",
     price: 120,
-    categorie: "Electronicos"
-  },{
+    category: "Electronics",
+  },
+  {
     title: "Laptop",
     price: 990,
-    categorie: "Electronicos"
-  },{
-    title: "Reloj inteligente",
+    category: "Electronics",
+  },
+  {
+    title: "Smartwatch",
     price: 150,
-    categorie: "Electronicos"
-  },{
-    title: "Sofa negro",
+    category: "Electronics",
+  },
+  {
+    title: "Black sofa",
     price: 499,
-    categorie: "Muebles"
-  },{
-    title: "Gafas de sol rosado",
+    category: "Furniture",
+  },
+  {
+    title: "Pink sunglasses",
     price: 79,
-    categorie: "Otros"
-  },{
-    title: "Cartera transparente",
+    category: "Others",
+  },
+  {
+    title: "Transparent purse",
     price: 160,
-    categorie: "Otros"
-  },{
-    title: "Sandalia",
+    category: "Others",
+  },
+  {
+    title: "Sandal",
     price: 70,
-    categorie: "Ropa"
+    category: "Clothing",
   }
-  
 ];
+
 
 itemsArray.forEach((item, index)=>{
   item.img = [`../img-products/${index + 1}.jpg`, `../img-products/${index + 1}.1.jpg`, `../img-products/${index + 1}.2.jpg`]

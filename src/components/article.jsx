@@ -22,7 +22,7 @@ export default function Article(props) {
   };
 
   return (
-    <div className='product-card' info={props.categorie}>
+    <div className='product-card' info={props.category}>
       <Link to={`/products/${props.codigo}`}>
         <img src={props.img[0]} alt={props.title} className="product-card-img" />
       </Link>
@@ -33,7 +33,7 @@ export default function Article(props) {
             <span className="read-more">Read More</span>
           </Link>
         </p>
-        <p className="product-categorie">{props.categorie}</p>
+        <p className="product-categorie">{props.category}</p>
         <p className='product-price'>$ {props.price}</p>
         <figure className="product-cart" onClick={() => addItemCart(props)}>
           <img src="../icons/cart-plus-solid.svg"

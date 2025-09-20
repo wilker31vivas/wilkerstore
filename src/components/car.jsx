@@ -44,7 +44,7 @@ export function Car({ num }) {
                     </div>
 
                     <div className={`cart-shopping-dropdown-menu ${open ? 'active' : 'inactive'}`} >
-                        <h3 className='cart-shopping-title'>Meus Items:</h3>
+                        <h3 className='cart-shopping-title'>My Items:</h3>
                         <ul className='item-list'>
                             <ItemsList></ItemsList>
                         </ul>
@@ -59,7 +59,7 @@ function ItemsList() {
     const { items } = useContext(TiendaContext);
 
     if (items.length === 0) {
-        return <h1 className="cart-shopping-title">Ainda não tem items</h1>
+        return <h1 className="cart-shopping-title">No items yet</h1>
     }
 
     return (
@@ -88,7 +88,7 @@ function Buy() {
                 <p>R$ {priceReduce.toFixed(2)}</p>
             </div>
             <button className="buy-button">
-                Comprar
+                Buy
             </button>
         </>
     )

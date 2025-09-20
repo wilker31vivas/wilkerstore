@@ -12,12 +12,12 @@ export default function CarItems({ item }) {
             <p className='myOrder-item-title'>{item.title}</p>
             <p className='myOrder-item-price'>R$ {item.price}</p>
             <div className="myOrder-item-div">
-                <h2 className="text-qtd-title">Qtd:</h2>
+                <h2 className="text-qtd-title">Amt:</h2>
                 <button className="btn-qtd decreased" onClick={() => decreased(item)}>-</button>
                 <p className="text-qtd">{item.qtd}</p>
                 <button className="btn-qtd increase" onClick={() => increase(item)}>+</button>
             </div>
-            <button className='myOrder-item-remove' onClick={() => eliminarItem(item.id)}>Excluir</button>
+            <button className='myOrder-item-remove' onClick={() => eliminarItem(item.id)}>Delete</button>
         </li>
     )
 }

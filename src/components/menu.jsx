@@ -30,11 +30,11 @@ function Menu() {
             <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`} >
                 <h3 className='dropdown-title'>Categories</h3>
                 <ul>
-                    <DropdownItem item={"Todo"} categorie="all"/>
-                    <DropdownItem item={"Ropa"} categorie="Ropa"/>
-                    <DropdownItem item={"Electronicos"} categorie="Electronicos"/>
-                    <DropdownItem item={"Muebles"} categorie="Muebles"/>
-                    <DropdownItem item={"Otros"} categorie="Otros"/>
+                    <DropdownItem item={"All"} category="all"/>
+                    <DropdownItem item={"Clothing"} category="Clothing"/>
+                    <DropdownItem item={"Electronics"} category="Electronics"/>
+                    <DropdownItem item={"Furniture"} category="Furniture"/>
+                    <DropdownItem item={"Others"} category="Others"/>
                 </ul>
             </div>
         </div>
@@ -62,7 +62,7 @@ function DropdownItem(props) {
     });
 
     return (
-        <li className="dropdownItem" onClick={() => filter(props.categorie)} ref={menuRef} >
+        <li className="dropdownItem" onClick={() => filter(props.category)} ref={menuRef} >
             <div onClick={() => { setOpen(!open) }}>
                 <button className='dropdownItem-button' >{props.item}</button>
                 <img alt="" className="cart-shopping-img" src={`${open ? './icons/caret-right-solid-white.svg' : './icons/caret-right-solid-black.svg'}`} />
